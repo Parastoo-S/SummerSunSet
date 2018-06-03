@@ -5,7 +5,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="30dp"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="ca.uottawa.tipcalculator2.SummaryScreen"
     tools:showIn="@layout/activity_summary_screen">
@@ -13,155 +12,245 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_weight="5"
+        android:layout_weight="1"
+        android:background="@color/colorSecondary"
         android:orientation="vertical">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:orientation="horizontal">
+            android:layout_weight=".27"
+            android:orientation="vertical">
 
             <TextView
-                android:id="@+id/textView3"
+                android:id="@+id/textView15"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="Bill Amount:" />
+                android:layout_height="match_parent"
+                android:fontFamily="@font/roboto_medium"
+                android:gravity="center"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:text="Your Bill's Total"
+                android:textColor="@color/colorDarkText"
+                android:textSize="24sp" />
+        </LinearLayout>
 
-            <TextView
-                android:id="@+id/billAmountResult"
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight=".2"
+            android:orientation="vertical"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp">
+
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="left|right"
+                android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:text="billAmountResult" />
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/roboto_medium"
+                    android:text="Bill Amount"
+                    android:textAlignment="textStart"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorDarkText"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/billAmountResult"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/roboto_medium"
+                    android:gravity="center"
+                    android:text="billAmountResult"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/colorDarkText"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/roboto_medium"
+                    android:text="Tip Amount"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/colorDarkText"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/tipAmountResult"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/roboto_medium"
+                    android:gravity="center"
+                    android:text="tipAmountResult"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/colorDarkText"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/roboto_medium"
+                    android:text="Total Amount"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/colorDarkText"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/totalAmountResult"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/roboto_medium"
+                    android:gravity="center"
+                    android:text="totalAmountResult"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/colorDarkText"
+                    android:textSize="18sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight=".24"
+            android:orientation="vertical"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/roboto_medium"
+                    android:text="Tip Per Person"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/colorDarkText"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/tipPerPersonResult"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/roboto_medium"
+                    android:gravity="center"
+                    android:text="tipP/PersonResult"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/colorDarkText"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView11"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/roboto_medium"
+                    android:text="Each Person Pays"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/colorDarkText"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/eachPersonPaysResult"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/roboto_medium"
+                    android:gravity="center"
+                    android:text="eachPersonPaysResult"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/colorDarkText"
+                    android:textSize="18sp" />
+            </LinearLayout>
 
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:orientation="horizontal">
-
-            <TextView
-                android:id="@+id/textView5"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="Tip Amount:" />
-
-            <TextView
-                android:id="@+id/tipAmountResult"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="tipAmountResult" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:orientation="horizontal">
-
-            <TextView
-                android:id="@+id/textView7"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="Total Amount:" />
-
-            <TextView
-                android:id="@+id/totalAmountResult"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="totalAmountResult" />
-        </LinearLayout>
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_weight="4"
-        android:orientation="vertical">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:orientation="horizontal">
-
-            <TextView
-                android:id="@+id/textView9"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="Tip Per Person:" />
-
-            <TextView
-                android:id="@+id/tipPerPersonResult"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="tipPerPersonResult" />
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:orientation="horizontal">
-
-            <TextView
-                android:id="@+id/textView11"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="Each Person Pays:" />
-
-            <TextView
-                android:id="@+id/eachPersonPaysResult"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="eachPersonPaysResult" />
-        </LinearLayout>
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_weight="6"
-        android:orientation="vertical">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="horizontal">
+            android:layout_weight=".27"
+            android:orientation="vertical">
 
             <Space
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1" />
+                android:layout_height="match_parent"
+                android:layout_weight="4" />
 
-            <Button
-                android:id="@+id/done"
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:text="Done" />
+                android:orientation="horizontal">
 
-            <Space
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1" />
+                <Space
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <Button
+                    android:id="@+id/done"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/colorDarkText"
+                    android:fontFamily="@font/roboto_medium"
+                    android:text="Done"
+                    android:textColor="@color/colorLightText"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
         </LinearLayout>
-
     </LinearLayout>
 
 </LinearLayout>
