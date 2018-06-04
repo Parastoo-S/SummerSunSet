@@ -40,8 +40,9 @@
 
         <RatingBar
             android:id="@+id/ratingBar"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
             android:stepSize="1"
             tools:layout_editor_absoluteX="72dp"
             tools:layout_editor_absoluteY="108dp" />
@@ -50,15 +51,17 @@
             android:id="@+id/calculate"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/colorDarkText"
+            android:background="@color/colorGreen"
             android:text="Calculate Tip"
-            android:textColor="@color/colorLightText"
+            android:textColor="@color/colorDarkText"
             android:textSize="18sp" />
 
         <TextView
             android:id="@+id/textView14"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingTop="20dp"
             android:text="Suggested Tip Percentage:"
             android:textColor="@color/colorDarkText"
             android:textSize="18sp" />
@@ -66,7 +69,11 @@
         <TextView
             android:id="@+id/calculatedTip"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="match_parent"
+            android:fontFamily="@font/roboto_medium"
+            android:gravity="center"
+            android:textColor="@color/colorDarkText"
+            android:textSize="24sp" />
     </LinearLayout>
 
     <LinearLayout
@@ -86,9 +93,9 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:background="@color/colorDarkText"
+            android:background="@color/colorGreen"
             android:text="Save"
-            android:textColor="@color/colorLightText"
+            android:textColor="@color/colorDarkText"
             android:textSize="18sp" />
 
         <LinearLayout
@@ -103,9 +110,9 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:background="@color/colorDarkText"
+            android:background="@color/colorGreen"
             android:text="Cancel"
-            android:textColor="@color/colorLightText"
+            android:textColor="@color/colorDarkText"
             android:textSize="18sp" />
 
     </LinearLayout>
