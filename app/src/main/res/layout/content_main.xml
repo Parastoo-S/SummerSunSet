@@ -45,6 +45,40 @@
             android:paddingRight="20dp">
 
             <TextView
+                android:id="@+id/textView8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:fontFamily="@font/roboto_medium"
+                android:text="Current Currency"
+                android:textAlignment="textStart"
+                android:textColor="@color/colorDarkText"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/showCurrency"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="Current Currency$"
+                android:textAlignment="center"
+                android:textColor="@color/colorDarkText"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp">
+
+            <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
@@ -63,7 +97,7 @@
             <EditText
                 android:id="@+id/editBillAmount"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_weight="1"
                 android:background="@drawable/border_input_field"
@@ -71,40 +105,6 @@
                 android:hint="# Up to 999"
                 android:inputType="numberDecimal"
                 android:maxLength="5"
-                android:textSize="18sp" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:orientation="horizontal"
-            android:paddingLeft="20dp"
-            android:paddingRight="20dp">
-
-            <TextView
-                android:id="@+id/textView8"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_weight="1"
-                android:fontFamily="@font/roboto_medium"
-                android:text="Current Currency"
-                android:textAlignment="textStart"
-                android:textColor="@color/colorDarkText"
-                android:textSize="18sp" />
-
-            <TextView
-                android:id="@+id/showCurrency"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_gravity="center"
-                android:layout_weight="1"
-                android:background="@drawable/border_input_field"
-                android:ems="10"
-                android:gravity="center"
-                android:hint="Current Currency$"
-                android:textAlignment="center"
                 android:textSize="18sp" />
         </LinearLayout>
 
@@ -132,7 +132,7 @@
             <EditText
                 android:id="@+id/editPercentage"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_weight="1"
                 android:background="@drawable/border_input_field"
@@ -165,7 +165,7 @@
             <EditText
                 android:id="@+id/editNum"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_weight="1"
                 android:background="@drawable/border_input_field"
@@ -200,11 +200,11 @@
                     android:layout_height="match_parent"
                     android:layout_gravity="center"
                     android:layout_weight="1"
-                    android:background="@color/colorDarkText"
+                    android:background="@color/colorGreen"
                     android:elevation="0dp"
                     android:fontFamily="@font/roboto_medium"
                     android:text="Enter"
-                    android:textColor="@color/colorLightText"
+                    android:textColor="@color/colorDarkText"
                     android:textSize="18sp" />
 
             </LinearLayout>
