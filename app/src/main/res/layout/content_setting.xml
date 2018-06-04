@@ -65,7 +65,7 @@
                 <TextView
                     android:id="@+id/currentCurrency"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:background="@drawable/border_input_field"
                     android:fontFamily="@font/roboto_medium"
@@ -97,7 +97,7 @@
                 <Spinner
                     android:id="@+id/chooseCurrency"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:background="@drawable/border_input_field"
                     android:entries="@array/currency_arrays"
@@ -128,7 +128,7 @@
                 <EditText
                     android:id="@+id/defaultTip"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:background="@drawable/border_input_field"
                     android:ems="10"
@@ -167,10 +167,10 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:background="@color/colorDarkText"
+                    android:background="@color/colorGreen"
                     android:fontFamily="@font/roboto_medium"
                     android:text="Save"
-                    android:textColor="@color/colorLightText"
+                    android:textColor="@color/colorDarkText"
                     android:textSize="18sp" />
 
                 <LinearLayout
@@ -185,10 +185,10 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:background="@color/colorDarkText"
+                    android:background="@color/colorGreen"
                     android:fontFamily="@font/roboto_medium"
                     android:text="Cancel"
-                    android:textColor="@color/colorLightText"
+                    android:textColor="@color/colorDarkText"
                     android:textSize="18sp" />
             </LinearLayout>
         </LinearLayout>
