@@ -79,7 +79,7 @@ public class MainActivity extends AppCompatActivity {
                 }
 
                 else if (Double.parseDouble(editBillAmount.getText().toString()) >= 1000) {
-                    Toast.makeText(getApplicationContext(), "Bill Maximum Value is $999.99", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getApplicationContext(), "Bill Maximum Value is 999.99", Toast.LENGTH_SHORT).show();
                     return;
                 }
 
@@ -103,7 +103,7 @@ public class MainActivity extends AppCompatActivity {
                     return;
                 }
                 else if(Integer.parseInt(editNum.getText().toString()) > 300){
-                    Toast.makeText(getApplicationContext(), "Number of people must be less than 300.", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getApplicationContext(), "Number of people must be less than or equal to 300.", Toast.LENGTH_SHORT).show();
                     return;
                 }
                 else if( editNum.getText().toString().trim().isEmpty()){

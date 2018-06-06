@@ -99,9 +99,9 @@
                 android:layout_weight="1"
                 android:background="@drawable/border_input_field"
                 android:ems="10"
-                android:hint="$$ (up to 999.99)"
+                android:hint="(up to 999.99)"
                 android:inputType="numberDecimal"
-                android:maxLength="5"
+                android:maxLength="6"
                 android:textSize="18sp" />
         </LinearLayout>
 
@@ -186,7 +186,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="@color/colorLightText"
+                android:background="@color/colorSecondary"
                 android:orientation="horizontal">
 
                 <Button
@@ -195,8 +195,12 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_gravity="center"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="10dp"
                     android:layout_weight="1"
-                    android:background="@color/colorGreen"
+                    android:background="@drawable/bottom_button_input"
                     android:elevation="0dp"
                     android:fontFamily="@font/roboto_medium"
                     android:text="Enter"
