@@ -67,10 +67,9 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:background="@drawable/border_input_field"
                     android:fontFamily="@font/roboto_medium"
                     android:gravity="left|center"
-                    android:text="Currency"
+                    android:hint="Current Currency"
                     android:textColor="@color/colorDarkText"
                     android:textSize="18sp" />
             </LinearLayout>
@@ -97,9 +96,9 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:background="@drawable/border_input_field"
                     android:entries="@array/currency_arrays"
                     android:gravity="left|center"
+                    android:popupBackground="@drawable/bottom_button_input"
                     android:prompt="@string/spinner_prompt" />
             </LinearLayout>
 
