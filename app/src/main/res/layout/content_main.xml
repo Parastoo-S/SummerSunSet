@@ -177,16 +177,12 @@
             android:layout_weight="1"
             android:orientation="vertical">
 
-            <Space
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="4" />
-
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:background="@color/colorSecondary"
+                android:gravity="bottom"
                 android:orientation="horizontal">
 
                 <Button
@@ -200,7 +196,7 @@
                     android:layout_marginRight="20dp"
                     android:layout_marginTop="10dp"
                     android:layout_weight="1"
-                    android:background="@drawable/bottom_button_input"
+                    android:background="@color/colorPrimary"
                     android:elevation="0dp"
                     android:fontFamily="@font/roboto_medium"
                     android:text="Enter"
