@@ -71,7 +71,6 @@
                     android:fontFamily="@font/roboto_medium"
                     android:gravity="left|center"
                     android:text="Currency"
-                    android:textAlignment="textStart"
                     android:textColor="@color/colorDarkText"
                     android:textSize="18sp" />
             </LinearLayout>
@@ -90,7 +89,6 @@
                     android:fontFamily="@font/roboto_medium"
                     android:gravity="left|center"
                     android:text="Choose Currency"
-                    android:textAlignment="textStart"
                     android:textColor="@color/colorDarkText"
                     android:textSize="18sp" />
 
@@ -121,7 +119,6 @@
                     android:fontFamily="@font/roboto_medium"
                     android:gravity="left|center"
                     android:text="Default Tip:"
-                    android:textAlignment="textStart"
                     android:textColor="@color/colorDarkText"
                     android:textSize="18sp" />
 
