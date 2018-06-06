@@ -57,7 +57,6 @@
                     android:layout_weight="1"
                     android:fontFamily="@font/roboto_medium"
                     android:text="Bill Amount"
-                    android:textAlignment="textStart"
                     android:textAllCaps="false"
                     android:textColor="@color/colorDarkText"
                     android:textSize="18sp" />
@@ -71,7 +70,6 @@
                     android:fontFamily="@font/roboto_medium"
                     android:gravity="center"
                     android:text="billAmountResult"
-                    android:textAlignment="textStart"
                     android:textColor="@color/colorDarkText"
                     android:textSize="18sp" />
 
@@ -91,7 +89,6 @@
                     android:layout_weight="1"
                     android:fontFamily="@font/roboto_medium"
                     android:text="Tip Amount"
-                    android:textAlignment="textStart"
                     android:textColor="@color/colorDarkText"
                     android:textSize="18sp" />
 
@@ -104,7 +101,6 @@
                     android:fontFamily="@font/roboto_medium"
                     android:gravity="center"
                     android:text="tipAmountResult"
-                    android:textAlignment="textStart"
                     android:textColor="@color/colorDarkText"
                     android:textSize="18sp" />
             </LinearLayout>
@@ -123,7 +119,6 @@
                     android:layout_weight="1"
                     android:fontFamily="@font/roboto_medium"
                     android:text="Total Amount"
-                    android:textAlignment="textStart"
                     android:textColor="@color/colorDarkText"
                     android:textSize="18sp" />
 
@@ -136,7 +131,6 @@
                     android:fontFamily="@font/roboto_medium"
                     android:gravity="center"
                     android:text="totalAmountResult"
-                    android:textAlignment="textStart"
                     android:textColor="@color/colorDarkText"
                     android:textSize="18sp" />
             </LinearLayout>
@@ -164,7 +158,6 @@
                     android:layout_weight="1"
                     android:fontFamily="@font/roboto_medium"
                     android:text="Tip Per Person"
-                    android:textAlignment="textStart"
                     android:textColor="@color/colorDarkText"
                     android:textSize="18sp" />
 
@@ -177,7 +170,6 @@
                     android:fontFamily="@font/roboto_medium"
                     android:gravity="center"
                     android:text="tipP/PersonResult"
-                    android:textAlignment="textStart"
                     android:textColor="@color/colorDarkText"
                     android:textSize="18sp" />
 
@@ -197,7 +189,6 @@
                     android:layout_weight="1"
                     android:fontFamily="@font/roboto_medium"
                     android:text="Each Person Pays"
-                    android:textAlignment="textStart"
                     android:textColor="@color/colorDarkText"
                     android:textSize="18sp" />
 
@@ -210,7 +201,6 @@
                     android:fontFamily="@font/roboto_medium"
                     android:gravity="center"
                     android:text="eachPersonPaysResult"
-                    android:textAlignment="textStart"
                     android:textColor="@color/colorDarkText"
                     android:textSize="18sp" />
             </LinearLayout>
@@ -236,6 +226,7 @@
 
                 <Space
                     android:layout_height="match_parent"
+                    android:layout_width="match_parent"
                     android:layout_weight="1" />
 
                 <Button

@@ -71,7 +71,6 @@
                     android:fontFamily="@font/roboto_medium"
                     android:gravity="left|center"
                     android:text="Currency"
-                    android:textAlignment="textStart"
                     android:textColor="@color/colorDarkText"
                     android:textSize="18sp" />
             </LinearLayout>
@@ -90,7 +89,6 @@
                     android:fontFamily="@font/roboto_medium"
                     android:gravity="left|center"
                     android:text="Choose Currency"
-                    android:textAlignment="textStart"
                     android:textColor="@color/colorDarkText"
                     android:textSize="18sp" />
 
@@ -121,7 +119,6 @@
                     android:fontFamily="@font/roboto_medium"
                     android:gravity="left|center"
                     android:text="Default Tip:"
-                    android:textAlignment="textStart"
                     android:textColor="@color/colorDarkText"
                     android:textSize="18sp" />
 
@@ -160,36 +157,37 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:orientation="horizontal">
-
-                <Button
-                    android:id="@+id/save"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:background="@color/colorGreen"
-                    android:fontFamily="@font/roboto_medium"
-                    android:text="Save"
-                    android:textColor="@color/colorDarkText"
-                    android:textSize="18sp" />
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:background="@android:color/background_dark"
-                    android:orientation="vertical"></LinearLayout>
+                android:background="@color/colorSecondary">
 
                 <Button
                     android:id="@+id/cancel"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="10dp"
                     android:layout_weight="1"
-                    android:background="@color/colorGreen"
+                    android:background="@drawable/bottom_button_input"
                     android:fontFamily="@font/roboto_medium"
                     android:text="Cancel"
                     android:textColor="@color/colorDarkText"
                     android:textSize="18sp" />
+
+                <Button
+                    android:id="@+id/save"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bottom_button_input"
+                    android:fontFamily="@font/roboto_medium"
+                    android:text="Save"
+                    android:textColor="@color/colorDarkText"
+                    android:textSize="18sp" />
+
             </LinearLayout>
         </LinearLayout>
 

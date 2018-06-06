@@ -52,7 +52,6 @@
                 android:layout_weight="1"
                 android:fontFamily="@font/roboto_medium"
                 android:text="Current Currency"
-                android:textAlignment="textStart"
                 android:textColor="@color/colorDarkText"
                 android:textSize="18sp" />
 
@@ -74,7 +73,6 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:orientation="horizontal"
             android:paddingLeft="20dp"
             android:paddingRight="20dp">
 
@@ -86,7 +84,6 @@
                 android:autoText="false"
                 android:fontFamily="@font/roboto_medium"
                 android:text="Bill Amount"
-                android:textAlignment="textStart"
                 android:textColor="@color/colorDarkText"
                 android:textSize="18sp"
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -102,7 +99,7 @@
                 android:layout_weight="1"
                 android:background="@drawable/border_input_field"
                 android:ems="10"
-                android:hint="# Up to 999"
+                android:hint="$$ (up to 999.99)"
                 android:inputType="numberDecimal"
                 android:maxLength="5"
                 android:textSize="18sp" />
@@ -123,9 +120,8 @@
                 android:layout_gravity="center"
                 android:layout_weight="1"
                 android:fontFamily="@font/roboto_medium"
-                android:gravity="center"
+                android:gravity="left"
                 android:text="Tip Percentage"
-                android:textAlignment="textStart"
                 android:textColor="@color/colorDarkText"
                 android:textSize="18sp" />
 
@@ -158,7 +154,6 @@
                 android:layout_weight="1"
                 android:fontFamily="@font/roboto_medium"
                 android:text="Number of People Paying"
-                android:textAlignment="textStart"
                 android:textColor="@color/colorDarkText"
                 android:textSize="18sp" />
 
@@ -196,6 +191,7 @@
 
                 <Button
                     android:id="@+id/enter"
+                    style="@style/Widget.AppCompat.Button"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_gravity="center"

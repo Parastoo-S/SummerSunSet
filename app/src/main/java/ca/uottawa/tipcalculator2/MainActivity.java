@@ -60,9 +60,13 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-
                 if (editBillAmount.getText().toString().trim().isEmpty()) {
                     Toast.makeText(getApplicationContext(), "Please Enter the Bill Amount", Toast.LENGTH_SHORT).show();
+                    return;
+                }
+
+                else if (Double.parseDouble(editBillAmount.getText().toString()) >= 1000) {
+                    Toast.makeText(getApplicationContext(), "Bill Maximum Value is $999.99", Toast.LENGTH_SHORT).show();
                     return;
                 }
 
