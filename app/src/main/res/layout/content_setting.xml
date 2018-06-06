@@ -117,7 +117,7 @@
                     android:layout_weight="1"
                     android:fontFamily="@font/roboto_medium"
                     android:gravity="left|center"
-                    android:text="Default Tip:"
+                    android:text="Default Tip"
                     android:textColor="@color/colorDarkText"
                     android:textSize="18sp" />
 
@@ -130,9 +130,8 @@
                     android:ems="10"
                     android:fontFamily="@font/roboto_medium"
                     android:gravity="left|center"
+                    android:hint="Default Tip %"
                     android:inputType="numberDecimal"
-                    android:text="Default Tip"
-                    android:textColor="@color/colorDarkText"
                     android:textSize="18sp" />
             </LinearLayout>
 
