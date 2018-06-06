@@ -156,14 +156,19 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_weight="1">
+                android:layout_weight="1"
+                android:background="@color/colorSecondary">
 
                 <Button
                     android:id="@+id/cancel"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="10dp"
                     android:layout_weight="1"
-                    android:background="@color/colorGreen"
+                    android:background="@drawable/bottom_button_input"
                     android:fontFamily="@font/roboto_medium"
                     android:text="Cancel"
                     android:textColor="@color/colorDarkText"
@@ -173,8 +178,11 @@
                     android:id="@+id/save"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="10dp"
                     android:layout_weight="1"
-                    android:background="@color/colorGreen"
+                    android:background="@drawable/bottom_button_input"
                     android:fontFamily="@font/roboto_medium"
                     android:text="Save"
                     android:textColor="@color/colorDarkText"
