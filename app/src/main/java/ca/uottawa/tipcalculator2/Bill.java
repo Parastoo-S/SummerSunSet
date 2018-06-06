@@ -12,7 +12,7 @@ public class Bill {
     private static double tipPerPerson;
     private static double eachPersonPaysResult;
     private static String currencySymbol;
-
+    private static int currencyPosition;
     private double defaultTipPercentage;
     private Bill(){}
 
@@ -116,5 +116,20 @@ public class Bill {
         return currencySymbol;
     }
 
+    public int getCurrencyPosition(){
+        if(Bill.currency == "Dollar ($)"){
+            currencyPosition = 0;
+        }
+
+        else if(Bill.currency.equals("Euro (€)")){
+            currencyPosition = 1;
+        }
+
+        else{
+            currencyPosition = 2;
+        }
+
+        return currencyPosition;
+    }
 
 }

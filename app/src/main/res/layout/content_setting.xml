@@ -71,7 +71,7 @@
                     android:fontFamily="@font/roboto_medium"
                     android:gravity="left|center"
                     android:text="Currency"
-                    android:textColor="@color/colorDarkText"
+                    android:textColor="#737373"
                     android:textSize="18sp" />
             </LinearLayout>
 
@@ -133,7 +133,7 @@
                     android:gravity="left|center"
                     android:inputType="numberDecimal"
                     android:text="Default Tip"
-                    android:textColor="@color/colorDarkText"
+                    android:textColor="#737373"
                     android:textSize="18sp" />
             </LinearLayout>
 
