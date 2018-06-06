@@ -13,7 +13,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_weight="4"
+        android:layout_weight="4.5"
         android:orientation="vertical"
         android:paddingLeft="20dp"
         android:paddingRight="20dp">
@@ -33,7 +33,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_weight="3"
+        android:layout_weight="4"
         android:orientation="vertical"
         android:paddingLeft="20dp"
         android:paddingRight="20dp">
@@ -56,12 +56,21 @@
             android:textColor="@color/colorDarkText"
             android:textSize="18sp" />
 
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="4"
+        android:orientation="horizontal">
+
         <TextView
             android:id="@+id/textView14"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:paddingTop="20dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="top|center"
+            android:paddingTop="15dp"
             android:text="Suggested Tip Percentage:"
             android:textColor="@color/colorDarkText"
             android:textSize="18sp" />
@@ -70,22 +79,19 @@
             android:id="@+id/calculatedTip"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:layout_weight="1"
             android:fontFamily="@font/roboto_medium"
-            android:gravity="center"
+            android:gravity="top|center"
+            android:paddingTop="15dp"
             android:textColor="@color/colorDarkText"
             android:textSize="24sp" />
+
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_weight="4"
-        android:orientation="vertical"></LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_weight="4.45"
+        android:layout_weight="4.6"
         android:orientation="horizontal">
 
         <Button
@@ -94,10 +100,10 @@
             android:layout_height="match_parent"
             android:layout_marginBottom="10dp"
             android:layout_marginLeft="20dp"
-            android:layout_marginRight="20dp"
+            android:layout_marginRight="10dp"
             android:layout_marginTop="10dp"
             android:layout_weight="1"
-            android:background="@drawable/bottom_button_input"
+            android:background="@color/colorPrimary"
             android:text="Cancel"
             android:textColor="@color/colorDarkText"
             android:textSize="18sp" />
@@ -107,11 +113,11 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginBottom="10dp"
-            android:layout_marginLeft="20dp"
+            android:layout_marginLeft="10dp"
             android:layout_marginRight="20dp"
             android:layout_marginTop="10dp"
             android:layout_weight="1"
-            android:background="@drawable/bottom_button_input"
+            android:background="@color/colorPrimary"
             android:text="Save"
             android:textColor="@color/colorDarkText"
             android:textSize="18sp" />
