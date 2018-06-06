@@ -159,8 +159,18 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:orientation="horizontal">
+                android:layout_weight="1">
+
+                <Button
+                    android:id="@+id/cancel"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/colorGreen"
+                    android:fontFamily="@font/roboto_medium"
+                    android:text="Cancel"
+                    android:textColor="@color/colorDarkText"
+                    android:textSize="18sp" />
 
                 <Button
                     android:id="@+id/save"
@@ -173,23 +183,6 @@
                     android:textColor="@color/colorDarkText"
                     android:textSize="18sp" />
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:background="@android:color/background_dark"
-                    android:orientation="vertical"></LinearLayout>
-
-                <Button
-                    android:id="@+id/cancel"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:background="@color/colorGreen"
-                    android:fontFamily="@font/roboto_medium"
-                    android:text="Cancel"
-                    android:textColor="@color/colorDarkText"
-                    android:textSize="18sp" />
             </LinearLayout>
         </LinearLayout>
 
