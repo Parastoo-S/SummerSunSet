@@ -79,7 +79,7 @@ public class Bill {
 
     public void calculateTotalAmount(){
 
-        totalAmount = (Bill.billAmount + Bill.tipAmount);
+        totalAmount = Math.round((Bill.billAmount + Bill.tipAmount)*100.0)/100.0;
     }
 
     public void calculateTipPerPerson(){
