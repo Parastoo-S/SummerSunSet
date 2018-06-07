@@ -1,7 +1,9 @@
 package ca.uottawa.tipcalculator2;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
@@ -19,6 +21,8 @@ public class Setting extends AppCompatActivity {
     EditText defaultTip;
     Bill bill = Bill.getInstance();
     Button cancel;
+    private SharedPreferences setting;
+    private SharedPreferences.Editor settingEditor;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,9 +37,20 @@ public class Setting extends AppCompatActivity {
         defaultTip = (EditText) findViewById(R.id.defaultTip);
         cancel = (Button) findViewById(R.id.cancel);
 
-        currentCurrency.setText(bill.getCurrency());
-        defaultTip.setText(Double.toString(bill.getDefaultTipPercentage()));
+        setting = getSharedPreferences("settings", MODE_PRIVATE);
+        settingEditor = setting.edit();
 
+        currentCurrency.setText(setting.getString("currency", bill.getCurrency()));
+
+        if(currentCurrency.getText() != null){
+            bill.setCurrency(setting.getString("currency", bill.getCurrency()));
+            chooseCurrency.setSelection(bill.getCurrencyPosition());
+        }
+
+        defaultTip.setText(setting.getString("defaultTip", Double.toString(bill.getDefaultTipPercentage())));
+//        chooseCurrency.setSelection(bill.getCurrencyPosition());
+//        defaultTip.setText(Double.toString(bill.getDefaultTipPercentage()));
+//        chooseCurrency.setSelection(bill.getCurrencyPosition());
 
 
         save.setOnClickListener(new View.OnClickListener() {
@@ -45,6 +60,11 @@ public class Setting extends AppCompatActivity {
 
                 bill.setCurrency(String.valueOf(chooseCurrency.getSelectedItem()));
                 bill.setDefaultTipPercentage(Double.parseDouble(defaultTip.getText().toString()));
+
+                settingEditor.putString("currency", String.valueOf(chooseCurrency.getSelectedItem()));
+                settingEditor.commit();
+                settingEditor.putString("defaultTip", defaultTip.getText().toString());
+                settingEditor.commit();
 
                 Intent backToMainPage = new Intent(Setting.this, MainActivity.class);
                 startActivity(backToMainPage);

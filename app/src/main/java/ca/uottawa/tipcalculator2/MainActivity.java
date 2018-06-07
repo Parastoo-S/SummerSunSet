@@ -1,6 +1,7 @@
 package ca.uottawa.tipcalculator2;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -22,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
     EditText editNum;
     Button enter;
     TextView showCurrency;
-
+    public SharedPreferences setting;
 
     Bill bill = Bill.getInstance();
 
@@ -40,16 +41,35 @@ public class MainActivity extends AppCompatActivity {
         editNum = (EditText) findViewById(R.id.editNum);
         enter = (Button) findViewById(R.id.enter);
         showCurrency = (TextView) findViewById(R.id.showCurrency);
-        bill.setCurrencySymbol();
+        setting = getSharedPreferences("settings", MODE_PRIVATE);
+
 
         showCurrency.setText(bill.getCurrency());
+
+        String currency = setting.getString("currency", bill.getCurrency());
+        double defTip = Double.parseDouble(setting.getString("defaultTip", "0.0" ));
 
         if(bill.getTipPercentage() != 0.0){
             editPercentage.setText(Double.toString(bill.getTipPercentage()));
         }
-        else if(bill.getDefaultTipPercentage() != 0.0){
-            editPercentage.setText(Double.toString(bill.getDefaultTipPercentage()));
+        else if(defTip != 0.0){
+            editPercentage.setText(Double.toString(defTip));
         }
+
+
+
+        if(currency != null){
+            bill.setCurrency(currency);
+            showCurrency.setText(bill.getCurrency());
+            bill.setCurrencySymbol();
+        }
+
+        else{
+            bill.setCurrency("Dollar ($)");
+            bill.setCurrencySymbol();
+            showCurrency.setText(bill.getCurrency());
+        }
+
 
         if(bill.getNumberOfPeople() != 0){
             editNum.setText(Integer.toString(1));
