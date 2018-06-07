@@ -49,14 +49,14 @@ public class MainActivity extends AppCompatActivity {
         String currency = setting.getString("currency", bill.getCurrency());
         double defTip = Double.parseDouble(setting.getString("defaultTip", "0.0" ));
 
-
-        if(defTip != 0.0){
+        if(bill.getTipPercentage() != 0.0){
+            editPercentage.setText(Double.toString(bill.getTipPercentage()));
+        }
+        else if(defTip != 0.0){
             editPercentage.setText(Double.toString(defTip));
         }
 
-        else if(bill.getTipPercentage() != 0.0){
-            editPercentage.setText(Double.toString(bill.getTipPercentage()));
-        }
+
 
         if(currency != null){
             bill.setCurrency(currency);
