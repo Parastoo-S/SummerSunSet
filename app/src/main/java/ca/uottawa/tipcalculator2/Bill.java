@@ -125,8 +125,12 @@ public class Bill {
             currencyPosition = 1;
         }
 
-        else{
+        else if(Bill.currency.equals("Pound (£)")){
             currencyPosition = 2;
+        }
+
+        else{
+            currencyPosition = 0;
         }
 
         return currencyPosition;
