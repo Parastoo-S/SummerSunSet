@@ -37,16 +37,18 @@ public class Setting extends AppCompatActivity {
         defaultTip = (EditText) findViewById(R.id.defaultTip);
         cancel = (Button) findViewById(R.id.cancel);
 
-        setting = PreferenceManager.getDefaultSharedPreferences(this);
+        setting = getSharedPreferences("settings", MODE_PRIVATE);
         settingEditor = setting.edit();
 
         currentCurrency.setText(setting.getString("currency", bill.getCurrency()));
 
         if(currentCurrency.getText() != null){
             bill.setCurrency(setting.getString("currency", bill.getCurrency()));
+            chooseCurrency.setSelection(bill.getCurrencyPosition());
         }
+
         defaultTip.setText(setting.getString("defaultTip", Double.toString(bill.getDefaultTipPercentage())));
-        chooseCurrency.setSelection(bill.getCurrencyPosition());
+//        chooseCurrency.setSelection(bill.getCurrencyPosition());
 //        defaultTip.setText(Double.toString(bill.getDefaultTipPercentage()));
 //        chooseCurrency.setSelection(bill.getCurrencyPosition());
 
